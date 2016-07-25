@@ -1,0 +1,7 @@
+#!/usr/bin/expect
+
+set timeout 600
+spawn ./build.sh
+expect "#?"
+send "1\r"
+expect eof
